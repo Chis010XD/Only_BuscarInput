@@ -1,0 +1,18 @@
+<div class="row p-3">
+  <div class="col-12">
+    <!-- busqueda   -->
+    <h5>Buscar:</h5>
+      <input type="text"
+      class="form-control"
+      placeholder="Buscar..."
+      (keyup.enter)="searchInput(txtsearchInput.value)"
+      #txtsearchInput>
+
+
+  </div>
+
+  <div class="col-12 pt-2">
+      <!-- listado de gifs -->
+      <app-segundo-cardlist [Lista]="Lista"></app-segundo-cardlist>
+  </div>
+</div>

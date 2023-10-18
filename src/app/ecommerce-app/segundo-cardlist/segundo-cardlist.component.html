@@ -1,0 +1,14 @@
+<div class="row">
+  <div  *ngFor="let lis of Lista"  class="col-md-3 col-sm-6">
+    <div class="card mb-2 text-center bg-dark">
+
+      <img [src]="lis.flags.svg " [alt]="lis.name.common" class="card-img-top">
+
+      <div class="card-body text-white">
+        <p class="card-text">
+          {{lis.name.common}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
